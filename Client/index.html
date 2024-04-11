@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWise</title>
+    <link rel="icon" href="./images/favicon.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="overlay"></div>
+        <a href="index.html" class="logo">
+            <img src="./images/logo.jpg" alt="DriveWise logo">
+        </a>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li>
+                    <a href="#home" class="navbar-link">Home</a>
+                </li>
+                <li>
+                    <a href="#featured-car" class="navbar-link">Featured Cars</a>
+                </li>
+                <li>
+                    <a href="#reviews" class="navbar-link">Reviews</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="header-contact">
+                <a href="tel:02134408489" class="contact-link">34 408 489</a>
+                <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+            </div>
+            <a href="#featured-car" class="btn" aria-label="Explore cars">
+                <ion-icon name="car-outline"></ion-icon>
+                <span>Explore cars</span>
+            </a>
+
+            <a href="login.html" class="btn" id="login-button">
+                <span>
+                    Login
+                </span></a>
+        </div>
+    </header>
+    <main>
+        <article>
+
+            <section class="section hero" id="home">
+                <div class="container">
+
+                    <div class="hero-content">
+                        <h2 class="h1 hero-title">Choice of Wise People</h2>
+                        <p class="hero-text">
+                            India !
+                        </p>
+                    </div>
+
+                    <div class="hero-banner">
+                        <img src="images/hero-banner.jpg" alt="background">
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="section featured-car" id="featured-car">
+                <div class="container">
+
+                    <div class="title-wrapper">
+                        <h2 class="h2 section-title">Featured cars</h2>
+
+                        <a href="login.html" class="featured-car-link">
+                            <span>View more</span>
+
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a>
+                    </div>
+
+                    <ul class="featured-car-list">
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="images/car-1.jpg" alt="Honda BRV" loading="lazy" width="440" height="300"
+                                        class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Honda BRV</a>
+                                        </h3>
+                                        <data class="year" value="2023">2023</data>
+                                    </div>
+
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+                                            <span class="card-item-text">7 People</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+                                            <span class="card-item-text">9.1 km/litre</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price">
+                                            <strong>Rs 8000</strong> / month
+                                        </p>
+                                        <button class="btn fav-btn" aria-label="Add to favourite list">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+                                        <button class="btn">Rent now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="./images/car-2.jpg" alt="Toyota Corolla" loading="lazy" width="440"
+                                        height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Toyota Corolla</a>
+                                        </h3>
+                                        <data class="year" value="2022">2019</data>
+                                    </div>
+
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+                                            <span class="card-item-text">5 People</span>
+                                        </li>
+
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+                                            <span class="card-item-text">12.8 km/litre</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price">
+                                            <strong>Rs 9000</strong> / month
+                                        </p>
+                                        <button class="btn fav-btn" aria-label="Add to favourite list">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+                                        <button class="btn">Rent now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="featured-car-card">
+                                <figure class="card-banner">
+                                    <img src="./images/car-3.jpg" alt="Hyundai Tucson" loading="lazy" width="440"
+                                        height="300" class="w-100">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-title-wrapper">
+                                        <h3 class="h3 card-title">
+                                            <a href="#">Hyundai Tucson</a>
+                                        </h3>
+                                        <data class="year" value="2021">2021</data>
+                                    </div>
+
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            <ion-icon name="people-outline"></ion-icon>
+                                            <span class="card-item-text">5 People</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="flash-outline"></ion-icon>
+                                            <span class="card-item-text">Gasoline</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="speedometer-outline"></ion-icon>
+                                            <span class="card-item-text">11.2 km/litre</span>
+                                        </li>
+                                        <li class="card-list-item">
+                                            <ion-icon name="hardware-chip-outline"></ion-icon>
+                                            <span class="card-item-text">Automatic</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="card-price-wrapper">
+                                        <p class="card-price">
+                                            <strong>Rs 10000</strong> / month
+                                        </p>
+                                        <button class="btn fav-btn" aria-label="Add to favourite list">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </button>
+                                        <button class="btn" onclick="notification()">Rent now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="reviews" id="reviews">
+                <div class="contain">
+                    <h2>Reviews</h2>
+                    <div class="outerdiv">
+                        <div class="innerdiv">
+                            <!-- div1 -->
+                            <div class="div1 eachdiv">
+                                <div class="userdetails">
+                                    <div class="imgbox">
+                                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="detbox">
+                                        <p class="name">Rushikesh Sayker</p>
+                                        <p class="designation">Verified Graduate</p>
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <h4>"I recently rented a car from DriveWise, and I couldn't be happier with the
+                                        experience. The staff was incredibly friendly and helpful, guiding me through
+                                        the rental process and answering all of my questions. "</h4>
+                                    <p>“The car I rented was in excellent condition and drove smoothly throughout my
+                                        entire trip. I highly recommend DriveWise to anyone in need of a reliable and
+                                        hassle-free car rental service.”</p>
+                                </div>
+                            </div>
+                            <!-- div2 -->
+                            <div class="div2 eachdiv">
+                                <div class="userdetails">
+                                    <div class="imgbox">
+                                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="detbox">
+                                        <p class="name">Rohit Ware</p>
+                                        <p class="designation">Verified Graduate</p>
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <h4>Renting a car from DriveWise was a breeze! </h4>
+                                    <p>“ The staff was friendly, the car was clean and well-maintained, and the whole
+                                        process was quick and hassle-free. I'll definitely be renting from them again in
+                                        the future. ”</p>
+                                </div>
+                            </div>
+                            <!-- div3 -->
+                            <div class="div3 eachdiv">
+                                <div class="userdetails">
+                                    <div class="imgbox">
+                                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="detbox">
+                                        <p class="name dark">Kajal Shinde</p>
+                                        <p class="designation dark">Verified Graduate</p>
+                                    </div>
+                                </div>
+                                <div class="review dark">
+                                    <h4>DriveWise is my top choice for renting a car whenever I travel. </h4>
+                                    <p>“ Their service is consistently outstanding, and I appreciate their attention to
+                                        detail. The vehicles are always clean, and the rental process is quick and
+                                        hassle-free. DriveWise goes above and beyond to ensure customer satisfaction,
+                                        and their flexible pickup and drop-off options make it incredibly convenient.
+                                        The efficiency and professionalism of their staff have saved me valuable time,
+                                        enabling me to focus on my work without any worries about transportation. I
+                                        highly recommend DriveWise for corporate travelers. I've recommended DriveWise
+                                        to friends and family, and they have all been impressed with the quality of
+                                        service. 100% recommend! ”</p>
+                                </div>
+                            </div>
+                            <!-- div4 -->
+                            <div class="div4 eachdiv">
+                                <div class="userdetails">
+                                    <div class="imgbox">
+                                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="detbox">
+                                        <p class="name dark">Priti Musale</p>
+                                        <p class="designation dark">Verified Graduate</p>
+                                    </div>
+                                </div>
+                                <div class="review dark">
+                                    <h4>Overall a wonderful & rewarding experience</h4>
+                                    <p>“ Thank you for the wonderful experience! The car we rented was spacious,
+                                        comfortable, and fuel-efficient, making our journey enjoyable. The team at
+                                        DriveWise was friendly and accommodating, making sure we had everything we
+                                        needed. Highly Recommended! ”</p>
+                                </div>
+                            </div>
+                            <!-- div5 -->
+                            <div class="div5 eachdiv">
+                                <div class="userdetails">
+                                    <div class="imgbox">
+                                        <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="detbox">
+                                        <p class="name">Rahul Gardare</p>
+                                        <p class="designation">Verified Graduate</p>
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <h4>I have been a loyal customer of DriveWise for several years now, and they have
+                                        consistently exceeded my expectations.</h4>
+                                    <p>“ Their rental fleet is diverse, offering a wide range of vehicles to choose
+                                        from, whether I need a compact car for a city trip or a spacious SUV for a
+                                        family vacation. The prices are competitive, and the customer service is
+                                        exceptional. DriveWise has become my go-to choice for all my car rental needs.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <p>Questions? Call 34 408 489</p>
+                <div class="footer-cols">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Ways To Watch</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Redeem Gift Cards</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Speed Test</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Buy Gift Cards</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+                    <div class="feet">
+                        <p>&copy; 2023 DriveWise. All rights reserved.</p>
+                    </div>
+                </div>
+
+            </footer>
+
+            <script>
+                   function notification(){
+                    swal("Succefully Rented", "Comform Payment", "success");
+                   }
+
+
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+                integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <!--
+            - custom js link
+        -->
+            <script src="scripts/scripts.js"></script>
+            <!--
+            ionicon link
+        -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

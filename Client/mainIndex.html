@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveWise</title>
+    <link rel="icon" href="./images/favicon.png" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/mainStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="overlay"></div>
+        <a href="mainIndex.html" class="logo">
+            <img src="./images/logo.jpg" alt="DriveWise logo">
+        </a>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li>
+                    <a href="index.html" class="navbar-link">Home</a>
+                </li>
+                <li>
+                    <a href="#featured-car" class="navbar-link">Featured Cars</a>
+                </li>
+                <li>
+                    <a href="index.html" class="navbar-link">Reviews</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="header-contact">
+                <a href="tel:02134408489" class="contact-link">34 408 489</a>
+                <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+            </div>
+            <a href="#featured-car" class="btn" aria-label="Explore cars">
+                <ion-icon name="car-outline"></ion-icon>
+                <span>Explore cars</span>
+            </a>
+                <div class="user-profile">
+                  <div class="user-info" onclick="toggleDropdown()">
+                    <ion-icon name="person-outline"></ion-icon>
+                  </div>
+                  <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="#" class="dropdown-link">
+                        <img id="profile" src="/images/profile.png" alt="signout">
+                        <p>Hi Zunain</p>
+                      </a>
+                    <hr>
+                    <a href="#" class="dropdown-link" id="signout">
+                      <img src="/images/signout.png" alt="signout">
+                      <p>Sign Out</p>
+                    </a>
+                    <a href="#" class="dropdown-link">
+                      <img src="/images/deletemyaccount.png" alt="deletemyaccount">
+                      <p>Delete my account</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </header>
+    <main>
+        <article>
+            <section class="section hero" id="home">
+                <div class="container">
+                    <form action="" class="hero-form">
+
+                        <div class="input-wrapper">
+                            <label for="input-1" class="input-label">Car, model, or brand</label>
+
+                            <input type="text" name="car-model" id="input-1" class="input-field"
+                                placeholder="What car are you looking?">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="input-2" class="input-label">Max. monthly payment</label>
+
+                            <input type="text" name="monthly-pay" id="input-2" class="input-field"
+                                placeholder="Add an amount in $">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="input-3" class="input-label">Make Year</label>
+
+                            <input type="text" name="year" id="input-3" class="input-field"
+                                placeholder="Add a minimal make year">
+                        </div>
+
+                        <button type="submit" class="btn">Search</button>
+
+                    </form>
+
+                </div>
+            </section>
+
+
+            <section class="section featured-car" id="featured-car">
+                <div class="container">
+
+                    <div class="title-wrapper">
+                        <h2 class="h2 section-title">Featured cars</h2>
+                    </div>
+
+                    <ul class="featured-car-list"> </ul>
+                <div class="modalOverlay" >
+                    <div class="modal">
+                      <a href="#close" class="close">&times;</a>
+                      <div>
+                        <h2>Registration Page</h2>
+                        <form>
+                          <label for="cnic">CNIC No:</label>
+                          <input type="text" id="cnic" name="cnic" required><br><br>
+                          <label for="start-date">Rental Start Date:</label>
+                          <input type="date" id="start-date" name="start-date" required><br><br>
+                          <label for="end-date">Rental End Date:</label>
+                          <input type="date" id="end-date" name="end-date" required><br><br>
+                          <button type="submit" value="Confirm" id="confirm-btn" onclick="onConfirm()">Confirm</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div id="confirmationPopup">
+                    <p id="confirmationMessage">Thank you for registering. Your car has been booked. We will call you shortly.</p>
+                  </div>
+            </section>
+            <div id="demarcation"></div>
+            <footer class="footer">
+                <p>Questions? Call 34 408 489</p>
+                <div class="footer-cols">
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Ways To Watch</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Redeem Gift Cards</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Speed Test</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Buy Gift Cards</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+
+                    <div class="feet">
+                        <p>&copy; 2023 DriveWise. All rights reserved.</p>
+                    </div>
+                </div>
+    
+            </footer>
+            <!-- 
+            <!--
+            - custom js link
+        -->
+            <script src="scripts/mainScript.js"></script>
+            <!--
+            ionicon link
+        -->
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
